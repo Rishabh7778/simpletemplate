@@ -1,0 +1,116 @@
+/* #about{
+    display: flex;
+    align-items: center;
+    border: 2px solid red;
+    max-width: 500px;
+    justify-content: center;
+} */
+
+#about .about {
+ 
+    flex-direction: row;
+   margin: auto;
+   border: 2px solid red;
+   max-width: 1500px;
+    
+}
+
+.container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#about .col-left{
+    width: 193%;
+    height: 400px;
+    padding-left: 60px;
+}
+#about .col-left .about-img {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    border: 10px solid white;
+}
+
+#about .col-left .about-img::after {
+    content: '';
+    position: absolute;
+    left: -33px;
+    top: 19px;
+    height: 98%;
+    width: 98%;
+    border: 7px solid crimson;
+    z-index: -1;
+}
+
+
+.section-title {
+    font-size: 3.8rem;
+    font-weight: 300;
+    color: black;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    /* text-align: center; */
+}
+
+#about .col-right h2 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    letter-spacing: 0.2rem;
+    margin-bottom: 10px;
+}
+
+#about .col-right p {
+    margin-left: 2px;
+    margin-bottom: 20px;
+}
+
+p {
+    color: black;
+    font-size: 1.4rem;
+    margin-top: 5px;
+    line-height: 2.5rem;
+    font-weight: 300;
+    letter-spacing: 0.05rem;
+}
+
+.cta{
+    display: inline-block;
+    color: aliceblue;
+    background-color: brown;
+    margin: 2px;
+    padding: 3px 16px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    outline: none;
+    text-align: center;
+}
+.cta:hover{
+    color: aquamarine;
+    background-color: rgb(184, 62, 62);
+    
+}
+
+@media (max-width: 1014px) {
+    .container{
+        display: block;
+    }
+    section .col-left{
+        max-width: 100%;
+    }
+
+    section .about-img img{
+        
+        height: 100%;
+        width: 100%;
+        object-fit: cover;      
+    }
+    
+
+section .col-right{
+    margin: 20px 20px;
+}
+}

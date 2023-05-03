@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@100&family=Raleway&family=Roboto+Mono:wght@300&family=Roboto:ital,wght@1,100&family=Ysabeau:wght@300&display=swap" rel="stylesheet">
+</head>
+<style>
+    body {
+	background-color: #f0f0f0;
+	font-family: 'Ysabeau', sans-serif;
+}
+
+.login-form {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding: 20px;
+	margin: 50px auto;
+	max-width: 500px;
+	text-align: center;
+}
+
+.login-form h1 {
+	font-size: 36px;
+	margin-top: 0;
+}
+
+.login-form label {
+	display: block;
+	font-size: 18px;
+	margin-bottom: 10px;
+	text-align: left;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	font-size: 16px;
+    padding: 10px 4px;
+	width: 100%;
+}
+
+.login-form button[type="submit"] {
+	background-color: #2e642e;
+	border: none;
+	border-radius: 3px;
+	color: #fff;
+	cursor: pointer;
+	font-size: 18px;
+	padding: 10px 20px;
+	margin-top: 20px;
+	transition: background-color 0.3s;
+}
+
+.login-form button[type="submit"]:hover {
+	background-color: #3e8e41;
+}
+
+#Registration{
+	
+	position: relative;
+	
+	font-size: 1.5rem;
+	
+	
+
+
+}
+
+</style>
+<body>
+    <div class="login-form">
+		<h1>Login</h1>
+		<form>
+			<label for="username">Username:</label>
+			<input type="text" id="username" name="username"><br><br>
+			<label for="password">Password:</label>
+			<input type="password" id="password" name="password"><br><br>
+			<button type="submit">Login</button>
+			<a href="form.html"><button type="submit">Sign-up</button></a>
+		</form>
+		<a href="form.html" id="Registration">Registration</a>
+	</div>
+</body>
+</html>

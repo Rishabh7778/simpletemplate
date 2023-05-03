@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="footer.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@100&family=Raleway:wght@300;400&family=Roboto+Mono:wght@300&family=Roboto:ital,wght@1,100&family=Ysabeau:wght@300&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <section id="main-img">
+
+        <section id="header">
+            <div class="header container">
+                <div class="nav-bar">
+                    <div class="brand">
+                        <a href="#hero">
+                            <h1><span>S</span>AT<span>Y</span>AM</h1>
+                        </a>
+                    </div>
+                    <div class="nav-list">
+                        <div class="hamburger">
+                            <div class="bar"></div>
+                        </div>
+                        <ul>
+                            <li><a href="#main-img" data-after="Home">Home</a></li>
+                            <li><a href="#service" data-after="Service">Services</a></li>
+                            <li><a href="#project" data-after="Projects">Contact</a></li>
+                            <li><a href="#about" data-after="About">About</a></li>
+                            <li><a href="login.html" data-after="Contact" id="login">Login</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script>
+            const hamburger = document.querySelector('.header .nav-bar .nav-list .hamburger');
+            const mobile_menu = document.querySelector('.header .nav-bar .nav-list ul');
+            const menu_item = document.querySelectorAll('.header .nav-bar .nav-list ul li a');
+            const header = document.querySelector('.header.container');
+
+            hamburger.addEventListener('click', () => {
+                hamburger.classList.toggle('active');
+                mobile_menu.classList.toggle('active');
+            });
+
+            document.addEventListener('scroll', () => {
+                var scroll_position = window.scrollY;
+                if (scroll_position > 250) {
+                    header.style.backgroundColor = '#29323c';
+                } else {
+                    header.style.backgroundColor = 'transparent';
+                }
+            });
+
+            menu_item.forEach((item) => {
+                item.addEventListener('click', () => {
+                    hamburger.classList.toggle('active');
+                    mobile_menu.classList.toggle('active');
+                });
+            });
+        </script>
+
+
+
+
+        <div class="text">
+            <h1><span class="clr">R</span>ishabh<span class="clr">_</span><span class="clr">K</span>umar</h1>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="Search" class="search_bar">
+            <div class="search_btn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <span id="name">I'm <span class="multiText"></span></span>
+
+        </div>
+        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+        <script>
+            var typingEffect = new Typed(".multiText", {
+                strings: ["Rishabh", "Satyam", "Shubham",],
+                loop: true,
+                typeSpeed: 150,
+                backspeed: 100,
+                startDelay: 200,
+                backDelay: 1500
+            })
+        </script>
+
+    </section>
+
+
+
+    <section id="service">
+        <article class="article">
+            <h1>Service</h1>
+            <p>A web service is any piece of software that makes itself available over the internet and uses a standardized XML messaging system. XML is used to encode all communications to a web service. For example, a client invokes a web service by sending an XML message, then waits for a corresponding XML response. As all communication is in XML, web services are not tied to any one operating system or programming language—Java can talk with Perl; Windows applications can talk with Unix applications.</p>
+        </article>
+
+        <section id="service-box">
+
+
+            <div class="box">
+
+                <div class="service-img">
+                    <img src="logo.png" alt="">
+                </div>
+                <h1>This is Header</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium et quidem exercitationem?</p>
+
+            </div>
+
+            <div class="box">
+                <div class="service-img">
+                    <img src="logo.png" alt="">
+                </div>
+                <h1>This is Header</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium et quidem exercitationem?</p>
+            </div>
+
+            <div class="box">
+                <div class="service-img">
+                    <img src="logo.png" alt="">
+                </div>
+                <h1>This is Header</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium et quidem exercitationem?</p>
+            </div>
+
+            <div class="box">
+                <div class="service-img">
+                    <img src="logo.png" alt="">
+                </div>
+                <h1>This is Header</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium et quidem exercitationem?</p>
+            </div>
+        </section>
+
+
+    </section>
+
+
+    <section id="about">
+        <div class="about container">
+            <div class="col-left">
+                <div class="about-img">
+                    <img src="https://img.freepik.com/free-vector/laptop-with-program-code-isometric-icon-software-development-programming-applications-dark-neon_39422-971.jpg?w=740&t=st=1683127378~exp=1683127978~hmac=36a5fbfa98d4fc134780d7858e5d5722adea3ba396c6b55cdbeb29da4fbbf9f9"
+                        alt="img">
+                </div>
+            </div>
+            <div class="col-right">
+                <h1 class="section-title">About <span>web</span></h1>
+                <h2>Front End Developer</h2>
+                <p>The discovery phase of a website is the very first step of the web development process. During this stage, developers and designers meet with clients to discuss the foundations of the website before the development phase. They collect and analyze all the critical information they need for the project</p>
+                <a href="https://en.wikipedia.org/wiki/Wikipedia" class="cta" target="_blank">Download Resume</a>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- ***************************************************************-->
+
+
+
+
+
+    <footer class="footer-distributed">
+
+        <div class="footer-left">
+
+            <h3>Rishabh<span>Kumar</span></h3>
+
+            <p class="footer-links">
+                <a href="#">Home</a>
+                ·
+                <a href="#">Blog</a>
+                ·
+                <a href="#">Pricing</a>
+                ·
+                <a href="#">About</a>
+                ·
+                <a href="#">Faq</a>
+                ·
+                <a href="#">Contact</a>
+            </p>
+
+            <p class="footer-company-name">Rishabh &copy; 2023</p>
+        </div>
+
+        <div class="footer-center">
+
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>58 Sarita vihar</span> Delhi, India</p>
+            </div>
+
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+919999999999</p>
+            </div>
+
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="saty665566@gamil.com">saty665566@gamil.com</a></p>
+            </div>
+
+        </div>
+
+        <div class="footer-right">
+
+            <p class="footer-company-about">
+                <span>About the company</span>
+                This is my first shopping project &amp; CodingMaster.
+            </p>
+
+            <div class="footer-icons">
+
+                <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://twitter.com/i/flow/login" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://in.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/Rishabh7778" target="_blank"><i class="fa-brands fa-github"></i></a>
+
+            </div>
+
+        </div>
+
+    </footer>
+</body>
+
+</html>
